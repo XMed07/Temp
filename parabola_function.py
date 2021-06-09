@@ -8,10 +8,9 @@ import numbers
 # return [min_Value, Max_value]
 def findMaxMinValue(a, b, c) :
 
-	# Calculate the value of second part
+  # Calculate the value of second part
   secondPart = c * 1.0 - (b * b / (4.0 * a));
 	
-	# Print the values
   if (a > 0) :
     # Open upward parabola function
     #print("Maxvalue =", "Infinity");
@@ -20,20 +19,20 @@ def findMaxMinValue(a, b, c) :
 		
   elif (a < 0) :
 		
-		# Open downward parabola function
-		#print("Maxvalue = ", secondPart);
-		#print("Minvalue =", "-Infinity");
+    # Open downward parabola function
+    #print("Maxvalue = ", secondPart);
+    #print("Minvalue =", "-Infinity");
     return (["-Infinity",secondPart]);
 		
   else :
 		
-		# If a=0 then it is not a quadratic function
-		#print("Not a quadratic function");
+    # If a=0 then it is not a quadratic function
+    #print("Not a quadratic function");
     return([None,None])
 
 #=========  Main section  ============================
 if __name__ == "__main__" :
-	#The quadratic equation ax**2 + bx + c = Function
+  #The quadratic equation ax**2 + bx + c = Function
   a = 0.3  ; b = -2.4  ; c =  9
   min_max_values = findMaxMinValue(a, b, c);
 
